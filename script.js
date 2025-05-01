@@ -141,3 +141,20 @@ $(document).ready(function(){
         }
     });
 });
+
+// Disable right-click
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+});
+
+// Disable certain key combinations
+document.addEventListener('keydown', function (e) {
+    // F12, Ctrl+Shift+I, Ctrl+U, Ctrl+Shift+J
+    if (
+        e.key === 'F12' ||
+        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) ||
+        (e.ctrlKey && e.key === 'U')
+    ) {
+        e.preventDefault();
+    }
+});
