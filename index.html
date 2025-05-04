@@ -1,60 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Under Construction</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Updating in Progress</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            height: 100vh;
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            font-family: 'Segoe UI', sans-serif;
-            padding: 20px;
-        }
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
-        .container {
-            max-width: 700px;
-        }
+    .container {
+      text-align: center;
+      padding: 20px;
+    }
 
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
+    .emoji {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      animation: float 2s ease-in-out infinite;
+    }
 
-        p {
-            font-size: 1.3rem;
-            color: #ddd;
-        }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
 
-        .icon {
-            font-size: 4rem;
-            margin-bottom: 1rem;
-            animation: pulse 1.5s infinite;
-        }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
 
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
-        }
-    </style>
+    .typewriter {
+      font-size: 1.5rem;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid #ffffff;
+      width: 0;
+      animation: typing 4s steps(40, end) forwards, blink 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+
+    p {
+      margin-top: 30px;
+      font-size: 1rem;
+      color: #bbbbbb;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="icon">🚧</div>
-        <h1>Website Under Construction</h1>
-        <p>We’re currently working on something awesome. Please check back soon!</p>
-    </div>
+  <div class="container">
+    <div class="emoji">🛠️</div>
+    <h1>Website Update in Progress</h1>
+    <div class="typewriter">We’re currently working on updates and improvements.</div>
+    <p>Thank you for your patience!</p>
+  </div>
 </body>
 </html>
